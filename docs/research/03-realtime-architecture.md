@@ -117,6 +117,7 @@ flowchart TD
 **Decision rule:** relational = anything with joins, constraints, SQL analytics, long retention; document = evolving/raw payloads with TTL; cache = sub-second reads, never the only durable copy.
 
 ### 2.1 PostgreSQL (source of truth)
+
 | Table (sketch) | Key columns | Notes / index |
 |---|---|---|
 | `airports` | `icao` PK, `iata`, name, city, `lat`, `lon`, tz, country | dimension |
@@ -236,6 +237,7 @@ sequenceDiagram
 | Self-hosted vector tiles (OpenFreeMap/Protomaps) | no-key freedom, but extra infra **[INFERENCE]** | out of scope |
 
 (Leaflet's provider registry lists these swaps: [leafletjs.com/examples/providers](https://leafletjs.com/examples/providers/).)
+
 ---
 
 ## 5. MLflow + model serving

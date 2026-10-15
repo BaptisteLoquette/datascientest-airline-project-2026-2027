@@ -11,8 +11,6 @@
 flowchart LR
     subgraph ADSB["Real-time ADS-B (positions)"]
         OS[OpenSky /states/all<br/>anon OK ✅]
-
-[331 more lines in resource. Use :139 to continue]
         AL[adsb.lol /v2/point ✅]
         AF[adsb.fi opendata ✅ sample]
         ALV[airplanes.live ❌ blocked 2026-10-15]
@@ -133,8 +131,6 @@ Sources: https://www.flightaware.com/commercial/aeroapi · OpenAPI https://www.f
 
 ### 2.1 NOAA Aviation Weather Center Data API — primary METAR/TAF ✅ (free, no key)
 
-
-[211 more lines in resource. Use :259 to continue]
 Docs: https://aviationweather.gov/data/api · OpenAPI: https://aviationweather.gov/data/schema/openapi.yaml
 
 - `GET /api/data/metar?ids=LFPG,LSGG&format=json` ✅ **live**, worldwide, 30 days history, formats raw/JSON/GeoJSON/CSV/XML/IWXXM.
@@ -255,8 +251,6 @@ states[0] = ["398c4e","SAMU71  ","France",1792069063,1792069063,
 # baro_altitude(m) | on_ground | velocity(m/s) | true_track(°) | vertical_rate(m/s) |
 # sensors | geo_altitude(m) | squawk | spi | position_source
 ```
-
-[91 more lines in resource. Use :379 to continue]
 
 **B. OpenSky track waypoint** (rest.html): `[time(s), latitude, longitude, baro_altitude, true_track, on_ground]`
 
